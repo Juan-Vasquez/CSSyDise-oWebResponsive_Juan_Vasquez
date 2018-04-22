@@ -13,19 +13,21 @@ header{
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 header h1{
-	text-align: left;
 	text-shadow: 2px 2px #02010a;
-	display: inline-block;
 }
 /*Menu de enlaces*/
-#enlaces{
+header nav{
 	text-align: right;
 }
 #enlaces a{
+	color: white;
 	padding: 10px;
+	font-size: 1.5em;
 }
 #enlaces ul li{
 	list-style-type: none;
@@ -34,4 +36,40 @@ header h1{
 
 #enlaces a[href ^= 'index']{
 	text-decoration: none;
+}
+
+/*Imagen central-Antigua_Guatemala*/
+#imagen1{
+	background-color:  #82c3a6;
+	height: 30%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#imagen1 img{
+	width: 1000px;
+	height: 600px;
+	display: block;
+	margin: auto;
+}
+
+/*Imagenes secundarias*/
+#imagen2{
+	background-color: #d5c75f;
+	border: 1px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#imagen2 img[src$='jpg']{
+	width: 450px;
+	height: 400px;
+} 
+
+.Paisajes img:nth-child(2){
+	position: absolute;
+	right: 40px;
+}
+
+img a[src$='html']{
+	text-align: center;
 }
