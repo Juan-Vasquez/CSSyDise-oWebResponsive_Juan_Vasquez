@@ -1,22 +1,37 @@
+@font-face{
+	font-family: 'DancingScript-Bold';
+	src: url(../typografia/DancingScript-Bold.ttf);
+}
+/*cuerpo de la pagina*/
+body{
+	font-family: 'DancingScript-Bold', cursive;
+}
 /*Cabecera*/
 header{
 	background-color: #5b7989;
+	color: white;
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
 }
 
-header > h1{
-	text-shadow: 2px #02010a;
-	color: white;
+header h1{
+	text-align: left;
+	text-shadow: 2px 2px #02010a;
+	display: inline-block;
 }
-
 /*Menu de enlaces*/
+#enlaces{
+	text-align: right;
+}
+#enlaces a{
+	padding: 10px;
+}
 #enlaces ul li{
 	list-style-type: none;
+	display: inline-block;
 }
 
-#enlaces a{
+#enlaces a[href ^= 'index']{
 	text-decoration: none;
-	display: flex;
 }
