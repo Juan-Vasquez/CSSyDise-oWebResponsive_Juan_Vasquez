@@ -5,40 +5,44 @@
 /*cuerpo de la pagina*/
 body{
 	font-family: 'DancingScript-Bold', cursive;
+	background-color: #02010a;	
 }
 /*Cabecera*/
 header{
 	background-color: #5b7989;
-	color: white;
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
+	height: 100px;
 	width: 100%;
-	display: inline-flex;
 }
 header h1{
+	margin-left: 15px;
+	display: inline-block;
+	color: white;
 	text-shadow: 2px 2px #02010a;
 }
+header nav{
+ 	float: right;
+ 	margin-right: 15px;
+ 	margin-top: 10px;
+ 	font-size: 1em;
+	display: inline-block;
+}
 /*Menu de enlaces*/
-#enlaces ul{list-style-type: none;}
+a{
+	color: white;
+	font-size: 1.3em;
+}
+#enlaces ul li{
+	list-style-type: none;
+	display: inline;
+	margin-right: 10px;
+}
 
 #enlaces a[href ^= 'index']{
 	text-decoration: none;
 }
-header nav{
-	position: absolute;
-	right: 10px;
-}
-#enlaces li{
-	display: inline-block;
-	height: 100%;
-	margin-right: 10px;
-}
-#enlaces a{
-	color: white;
-	font-size: 1.2em;
-}
-
 /*Imagen central-Antigua_Guatemala*/
 #imagen1{
 	background-color:  #82c3a6;
@@ -51,6 +55,7 @@ header nav{
 	height: 600px;
 	display: block;
 	margin: auto;
+	box-shadow: 2px 2px #02010a;
 }
 
 /*Imagenes secundarias*/
@@ -59,10 +64,37 @@ header nav{
 	border: 1px;
 	display: flex;
 	flex-direction: nowrap;
+	padding-bottom: 5px;
 }
 #imagen2 img[src$='jpg']{
 	width: 450px;
 	height: 400px;
-	float: center;
-
+	box-shadow: 2px 2px #02010a;
+}
+#imagen2 .atitlan:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px #82c3a6;
 } 
+
+#imagen2 .catedral:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px #82c3a6;
+}
+
+#imagen2 figure{
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+}
+
+#imagen2 figcaption{
+	text-align: center;
+}
+/*Pie de Paginas*/
+footer{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #C6d5c5;
+	display: flex;
+	flex-flow: row wrap
+}
