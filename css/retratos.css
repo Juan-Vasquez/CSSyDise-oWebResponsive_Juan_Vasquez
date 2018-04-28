@@ -1,4 +1,4 @@
-/*Cuerpo de la pagina configuracion general*/
+/*Cuerpo de la pagina configuraciones generales*/
 @font-face{
 	font-family: 'DancingScript-Bold';
 	src: url(../typografia/DancingScript-Bold.ttf);
@@ -8,79 +8,81 @@
 	margin: auto;
 }
 body{
-	font-family: 'Dancingscript-Bold', cursive;
+	font-family: 'DancingScript-Bold', cursive;
 	background-color: #02010a;
 }
 /*Cabecera*/
 header{
 	background-color: #5b7989;
 	border-radius: 10px 10px 0px 0px;
-	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
 }
 
 header nav{
 	display: inline-block;
-	margin-right: 10px;
-	margin-top: 15px;
 	float: right;
+	margin-top: 15px;
 }
+
 header h1{
 	color: white;
-	display: inline-block;
 	text-shadow: 2px 2px #02010a;
 	margin-left: 15px;
+	display: inline-block;
 }
-/*nav anclajes*/
-#anclajes ul li{
+
+/*Conecciones*/
+nav ul li{
 	list-style-type: none;
-	margin-right: 10px;
 	display: inline;
+	margin-right: 10px;
 }
-#anclajes a[href$='Paisajes.html']{
+#conecciones a[href$='Retratos.html']{
 	text-decoration: none;
 }
-nav a{
-	font-size: 1.3em;
+#conecciones a{
 	color: white;
+	font-size: 1.3em;
 }
-/*cuerpo de la pagina ..Seccion*/
+
+/*Cuerpo de la pagina*/
 section{
 	background-color: #d5c75f;
 	display: flex;
 	flex-flow: row wrap;
 }
-#galeria img{
+
+#galerias img{
 	width: 210px;
 	height: 160px;
 }
-
-#galeria div{
+#galerias div{
 	display: block;
 	margin: auto;
 }
 .imagen1{
 	filter: blur(10px);
-	-webkit-filter: blur(10px);
 	-moz-filter: blur(10px);
+	-webkit-filter: blur(10px);
 }
 .imagen2, .imagen4, .imagen6{
 	filter: grayscale(100%);
-	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
 }
 .imagen3{
 	filter: sepia(90%);
-	-webkit-filter: sepia(90%);
 	-moz-filter: sepia(90%);
+	-webkit-filter: sepia(90%);
 }
 /*Pie de Pagina*/
 footer{
-	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #C6d5c5;
 	display: flex;
 	flex-flow: row wrap;
-	background-color: #C6d5c5;
 }
 footer ul li{
 	list-style-type: none;

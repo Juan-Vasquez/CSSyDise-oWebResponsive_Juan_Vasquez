@@ -7,14 +7,16 @@ body{
 	font-family: 'DancingScript-Bold', cursive;
 	background-color: #02010a;	
 }
+#contenido{
+	width: 900px;
+	margin: auto;
+}
 /*Cabecera*/
 header{
 	background-color: #5b7989;
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
-	height: 100px;
-	width: 100%;
 }
 header h1{
 	margin-left: 15px;
@@ -24,13 +26,12 @@ header h1{
 }
 header nav{
  	float: right;
- 	margin-right: 15px;
- 	margin-top: 10px;
- 	font-size: 1em;
+ 	margin-right: 10px;
+ 	margin-top: 15px;
 	display: inline-block;
 }
 /*Menu de enlaces*/
-a{
+#enlaces a{
 	color: white;
 	font-size: 1.3em;
 }
@@ -51,7 +52,7 @@ a{
 	padding-bottom: 20px;
 }
 #imagen1 img{
-	width: 1000px;
+	width: 750px;
 	height: 600px;
 	display: block;
 	margin: auto;
@@ -59,6 +60,10 @@ a{
 }
 
 /*Imagenes secundarias*/
+#imagen2 a{
+	color: black;
+	font-size: 1.3em;
+}
 #imagen2{
 	background-color: #d5c75f;
 	border: 1px;
@@ -67,8 +72,8 @@ a{
 	padding-bottom: 5px;
 }
 #imagen2 img[src$='jpg']{
-	width: 450px;
-	height: 400px;
+	width: 350px;
+	height: 300px;
 	box-shadow: 2px 2px #02010a;
 }
 #imagen2 .atitlan:hover{
@@ -98,3 +103,16 @@ footer{
 	display: flex;
 	flex-flow: row wrap
 }
+
+footer ul li{
+	list-style-type: none;
+}
+
+#caja1, #caja2, #caja3, #caja4{
+	margin: auto;
+}
+.caja3 img{
+	width: 15px;
+	height: 15px;
+}
+/*Aplicacion de media queries*/
