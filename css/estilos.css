@@ -13,6 +13,7 @@ body{
 }
 /*Cabecera*/
 header{
+	animation: miAnimacion 3s;
 	background-color: #5b7989;
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
@@ -118,6 +119,18 @@ footer ul li{
 .caja3 img{
 	width: 15px;
 	height: 15px;
+}
+/*Animacion keyframes*/
+@-webkit-keyframes miAnimacion{
+	0%{
+		margin-top: 150%;
+	}	
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
 }
 /*Aplicacion de media queries*/
 @media (min-width: 900px){
@@ -236,9 +249,6 @@ footer ul li{
 		width: 200px;
 		height: 150px;
 		margin: auto;
-	}
-	.caja1, .caja2, .caja3, .caja4{
-		text-align: left;
 	}
 }
 @media (max-width: 420px){
