@@ -105,11 +105,19 @@ footer ul li{
 	}
 }
 /*aplicacion de media queries*/
-@media (max-width: 645px){
+@media (max-width: 670px){
 	header{
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+	}
+	header h1{
+		width: 100%;
+		order: 1;
+	}
+	header nav{
+		width: 100%;
+		order: 2;
 	}
 }
 @media (min-width: 901px){
